@@ -1,0 +1,24 @@
+@mixin headerFont {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@mixin sliderFont {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+@mixin container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 768px) {
+        width: 400px;
+    }
+
+    @media (max-width: 480px) {
+        width: 250px;
+    }
+}

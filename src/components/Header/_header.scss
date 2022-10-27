@@ -1,0 +1,74 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 232px;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 50px;
+    }
+
+    &__logo {
+        @media (max-width: 768px) {
+            justify-self: center;
+        }
+    }
+
+    &__nav {
+        align-self: center;
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 64px;
+        }
+
+        &-link {
+            @include headerFont;
+            color: #A0A3A7;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+    }
+
+    &__button {
+        @include headerFont;
+        justify-self: end;
+        align-self: center;
+        width: 159px;
+        height: 48px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        background-color: #fff;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+            width: 120px;
+            height: 40px;
+            font-size: 12px;
+            border: radius 15px;
+        }
+
+        @media (max-width: 480px) {
+            display: none;
+        }
+    }
+}
+
+.menu-btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
