@@ -8,9 +8,18 @@
         margin-bottom: 50px;
     }
 
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
     &__logo {
         @media (max-width: 768px) {
+
             justify-self: center;
+        }
+
+        @media (max-width: 480px) {
+            justify-self: end;
         }
     }
 
